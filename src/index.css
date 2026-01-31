@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-start: #0f1724;
+  --bg-end: #0b1220;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Small utility for card backgrounds */
+.card-bg {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid rgba(100, 116, 139, 0.12);
+}
